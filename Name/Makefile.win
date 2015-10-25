@@ -4,14 +4,14 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = name.o
-LINKOBJ  = name.o
-LIBS     = -L"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+OBJ      = main.o
+LINKOBJ  = main.o
+LIBS     = -L"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
 INCS     = -I"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
 CXXINCS  = -I"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
 BIN      = Name.exe
-CXXFLAGS = $(CXXINCS) 
-CFLAGS   = $(INCS) 
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
 RM       = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
@@ -25,5 +25,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-name.o: name.c
-	$(CC) -c name.c -o name.o $(CFLAGS)
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
