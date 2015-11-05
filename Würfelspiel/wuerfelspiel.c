@@ -30,15 +30,13 @@ int main(int argc, char *argv[]) {
 		if(zahl_summe>21) {zahl_summe = 0;printf("Verloren, du Opfer!\n"); }
 		if(zahl_summe==0)break;
 		printf("Erreichte Punktzahl bisher: %d\n",zahl_summe);
-		printf("Weiterw""\x81""rfeln (irgendwas anderes als Enter zum beenden)\n\n");
+		printf("Weiterw""\x81""rfeln ('Enter' um weiter zu spielen ,'c' zum beenden)\n\n");
 		zahl = rand();
 		zahl = zahl%6+1;
 		ja_nein = getch();
 	}while(ja_nein==13);
 	
 	printf("Ergebnis:%d\n",zahl_summe);
-	getchar();
-	getchar();
 	
 	return 0;
 }
