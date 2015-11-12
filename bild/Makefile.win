@@ -1,0 +1,29 @@
+# Project: Bild
+# Makefile created by Dev-C++ 5.4.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = bild.o
+LINKOBJ  = bild.o
+LIBS     = -L"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
+INCS     = -I"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = Bild.exe
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+bild.o: bild.c
+	$(CC) -c bild.c -o bild.o $(CFLAGS)
