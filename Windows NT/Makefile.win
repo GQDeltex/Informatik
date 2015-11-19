@@ -1,0 +1,38 @@
+# Project: Windows NT
+# Makefile created by Dev-C++ 5.4.2
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = windows_nt.o wartezeit.o on,or,off.o anmelden.o
+LINKOBJ  = windows_nt.o wartezeit.o on,or,off.o anmelden.o
+LIBS     = -L"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32 -g3
+INCS     = -I"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = "Windows NT.exe"
+CXXFLAGS = $(CXXINCS) -m32 -g3
+CFLAGS   = $(INCS) -m32 -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+windows_nt.o: windows_nt.c
+	$(CC) -c windows_nt.c -o windows_nt.o $(CFLAGS)
+
+wartezeit.o: wartezeit.c
+	$(CC) -c wartezeit.c -o wartezeit.o $(CFLAGS)
+
+on,or,off.o: on,or,off.c
+	$(CC) -c on,or,off.c -o on,or,off.o $(CFLAGS)
+
+anmelden.o: anmelden.c
+	$(CC) -c anmelden.c -o anmelden.o $(CFLAGS)
