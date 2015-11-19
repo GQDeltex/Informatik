@@ -6,11 +6,9 @@
 int main(int argc, char *argv[]) {
 		
 	int zahl;
-	int zahl_1;
-	int zahl_2;
-	int zahl_3;
+	int end_zahl;
+	int i;
 	int ja_nein;
-	int durchgang;
 	
 	do 
 	{
@@ -19,19 +17,12 @@ int main(int argc, char *argv[]) {
 	printf("Zahl: ");
 	scanf("%d",&zahl);
 	if (zahl==0) break;
-	durchgang=0;
+
+	for (i=0; i<zahl; i++){
+		end_zahl=zahl*i;
+	}
 	
-	zahl_1=zahl;
-	zahl_2=zahl_1-1;
-	do
-	{
-	zahl_3=zahl_1*zahl_2;
-	zahl_1=zahl_3;
-	zahl_2=zahl_2-1;
-	durchgang=durchgang+1;
-	}while (zahl_2>1);
-	
-	printf("Deine Zahl ist: %d\n",&zahl_3);
+	printf("Deine Zahl ist: %d\n",end_zahl);
 	printf("\n");
 	printf("Um das Programm zu stoppen druecken sie die 0\n");
 	printf("Wenn sie weiter machen wollen druecken sie die 1\n");
