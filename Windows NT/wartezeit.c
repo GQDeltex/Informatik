@@ -11,7 +11,7 @@ int wartezeit(){
 		sleep(1);
 		printf(".");
 		sleep(1);
-		printf(".\n");
+		printf(".");
 		sleep(1);
 		zaehler=zaehler+1;
 	}while(zaehler<4);
