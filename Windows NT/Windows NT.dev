@@ -28,25 +28,25 @@ Folders=
 IncludeVersionInfo=1
 SupportXPThemes=0
 CompilerSet=0
-CompilerSettings=0000000000000000000000000
+CompilerSettings=0000000000000000001000000
 UnitCount=6
 
 [VersionInfo]
 Major=0
 Minor=0
 Release=0
-Build=30
+Build=53
 LanguageID=1031
 CharsetID=1252
 CompanyName=
-FileVersion=0.0.0.30
+FileVersion=0.0.0.53
 FileDescription=Developed using the Dev-C++ IDE
 InternalName=
 LegalCopyright=
 LegalTrademarks=
 OriginalFilename=
 ProductName=
-ProductVersion=0.0.0.30
+ProductVersion=0.0.0.53
 AutoIncBuildNr=1
 SyncProduct=1
 

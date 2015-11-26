@@ -22,14 +22,14 @@ int anmelden(){
 				printf("noch %d versuch(e)\n",3-zaehler);
 			}
 			if (zaehler==3){
-				printf("Passwort 3 mal falsch eingegeben Rechner wird nun heruntergefahren.\n");
+				printf("Passwort 3 mal falsch eingegeben.Lange kannst du das nicht mehr machen\n");
 				printf("                                                                               \n");
 				printf("                         |     |                                               \n");
 				printf("                           ___                                                 \n");
 				printf("                          /   \\                                                \n");
 				printf("                                                                               \n");
 				sleep(3);
-				herunterfahren();
+				anmelden();
 				return 0;
 			}
 			
@@ -68,7 +68,7 @@ int anmelden(){
 		printf("ERROR\n");
 		printf("Dieser Benutzername existiert nicht!");
 		sleep(5);
-		herunterfahren();
+		anmelden();
 		return 0;
 	}
 	

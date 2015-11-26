@@ -10,8 +10,8 @@ A ICON "Windows NT.ico"
 // TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
 //
 1 VERSIONINFO
-FILEVERSION 0,0,0,30
-PRODUCTVERSION 0,0,0,30
+FILEVERSION 0,0,0,53
+PRODUCTVERSION 0,0,0,53
 FILETYPE VFT_APP
 {
   BLOCK "StringFileInfo"
@@ -19,14 +19,14 @@ FILETYPE VFT_APP
     BLOCK "040704E4"
     {
       VALUE "CompanyName", ""
-      VALUE "FileVersion", "0.0.0.30"
+      VALUE "FileVersion", "0.0.0.53"
       VALUE "FileDescription", "Developed using the Dev-C++ IDE"
       VALUE "InternalName", ""
       VALUE "LegalCopyright", ""
       VALUE "LegalTrademarks", ""
       VALUE "OriginalFilename", ""
       VALUE "ProductName", ""
-      VALUE "ProductVersion", "0.0.0.30"
+      VALUE "ProductVersion", "0.0.0.53"
     }
   }
   BLOCK "VarFileInfo"

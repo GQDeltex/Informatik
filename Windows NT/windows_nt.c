@@ -15,4 +15,7 @@ int main(int argc, char *argv[]) {
 		hochfahren();
 		return 0;
 	}
+	else{
+		return 0;
+	}
 }

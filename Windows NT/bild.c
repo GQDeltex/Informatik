@@ -3,9 +3,6 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int bild() {
-	int antwort;
-	
 	int links(){
 	printf("                                                                               \n");
 	printf("                                                                               \n");
@@ -29,7 +26,7 @@ int bild() {
 	printf("                                                                               \n");
 	printf("                                                                               \n");
 	printf("                                                                               \n");
-	sleep(0.05);
+	sleep(1);
 	printf("                                                                               \n");
 	printf("                                                                               \n");
 	printf("                                                                               \n");
@@ -52,7 +49,7 @@ int bild() {
 	printf("                                                                               \n");
 	printf("                                                                               \n");
 	printf("                                                                               \n");
-	sleep(0.05);
+	sleep(1);
 	}
 	
 	int mitte(){
@@ -78,7 +75,7 @@ int bild() {
 	printf("                                                                               \n");
 	printf("                                                                               \n");
 	printf("                                                                               \n");
-	sleep(0.05);
+	sleep(1);
 	printf("                                                                               \n");
 	printf("                                                                               \n");
 	printf("                                                                               \n");
@@ -101,7 +98,7 @@ int bild() {
 	printf("                                                                               \n");
 	printf("                                                                               \n");
 	printf("                                                                               \n");
-	sleep(0.05);
+	sleep(1);
 	}
 	
 	int rechts(){
@@ -127,7 +124,7 @@ int bild() {
 	printf("                                                                               \n");
 	printf("                                                                               \n");
 	printf("                                                                               \n");
-	sleep(0.05);
+	sleep(1);
 	printf("                                                                               \n");
 	printf("                                                                               \n");
 	printf("                                                                               \n");
@@ -150,10 +147,12 @@ int bild() {
 	printf("                                                                               \n");
 	printf("                                                                               \n");
 	printf("                                                                               \n");
-	sleep(0.05);
+	sleep(1);
 	}
+
+int bild() {
+	int antwort;
 	
-	do{
 		links();
 		links();
 		links();
@@ -166,10 +165,15 @@ int bild() {
 		rechts();
 		mitte();
 		mitte();
+		system("cls");
 		printf("Weiter[1/0]");
 		scanf("%d",&antwort);
-	}while(antwort!=0);
-	system("cls");
-	input();
-	return 0;
+		if (antwort==1){
+			bild();
+		}
+		else{
+		system("cls");
+		input();
+		}
+		return 0;
 }
