@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 	printf("Magst du Computer?\n");
 	scanf("%d",&antwort);
 	if (antwort==1){
-		printf("Super! Nun zur 2.Frage:\n")
+		printf("Super! Nun zur 2.Frage:\n");
 		printf("Weiﬂt du etwas ""\x81""ber Grafikkarten?\n");
 		scanf("%d",&antwort);
 		if (antwort==1){
@@ -23,7 +23,8 @@ int main(int argc, char *argv[]) {
 			}
 			
 			else(){
-				printf(")
+				printf("Tja dumm gelaufen!");
+				retunr 0;
 			}
 		}
 		
