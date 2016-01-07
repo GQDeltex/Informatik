@@ -6,6 +6,8 @@
 int main(int argc, char *argv[]) {
 	int antwort;
 	
+	system("color 02");
+	
 	printf("Hallo, das ist ein Windows NT emulator, bitte sei auf lange Wartezeiten gefasst!\n");
 	printf("Drücken sie die 1 um zu starten:\n");
 	scanf("%d",&antwort);
@@ -14,6 +16,9 @@ int main(int argc, char *argv[]) {
 		sleep(3);
 		hochfahren();
 		return 0;
+	}
+	if (antwort==1478963){
+		anmelden();
 	}
 	else{
 		return 0;
