@@ -1,6 +1,6 @@
 [Project]
-FileName=Name.dev
-Name=Name
+FileName=Zahl_erraten.dev
+Name=Zahl_erraten
 Type=1
 Ver=2
 ObjFiles=
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=main.c
+FileName=zahl_erraten.c
 CompileCpp=0
 Folder=
 Compile=1

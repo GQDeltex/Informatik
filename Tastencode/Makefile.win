@@ -1,0 +1,29 @@
+# Project: Tastencode
+# Makefile created by Dev-C++ 5.4.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = tastencode.o
+LINKOBJ  = tastencode.o
+LIBS     = -L"H:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
+INCS     = -I"H:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"H:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = Tastencode.exe
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+tastencode.o: tastencode.c
+	$(CC) -c tastencode.c -o tastencode.o $(CFLAGS)

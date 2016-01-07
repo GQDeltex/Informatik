@@ -1,6 +1,6 @@
 [Project]
-FileName=Name.dev
-Name=Name
+FileName=Wuerfelspiel.dev
+Name=Würfelspiel
 Type=1
 Ver=2
 ObjFiles=
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=main.c
+FileName=wuerfelspiel.c
 CompileCpp=0
 Folder=
 Compile=1

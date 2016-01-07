@@ -1,0 +1,29 @@
+# Project: fakultaet_berechnung
+# Makefile created by Dev-C++ 5.4.2
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = fakultaet.o
+LINKOBJ  = fakultaet.o
+LIBS     = -L"H:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32 -g3
+INCS     = -I"H:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"H:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = fakultaet_berechnung.exe
+CXXFLAGS = $(CXXINCS) -m32 -g3
+CFLAGS   = $(INCS) -m32 -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+fakultaet.o: fakultaet.c
+	$(CC) -c fakultaet.c -o fakultaet.o $(CFLAGS)

@@ -1,15 +1,15 @@
-# Project: Name
+# Project: Bild
 # Makefile created by Dev-C++ 5.4.2
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o
-LINKOBJ  = main.o
+OBJ      = bild.o
+LINKOBJ  = bild.o
 LIBS     = -L"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
 INCS     = -I"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
 CXXINCS  = -I"E:/0_Programmierung/Informatik/KL.9/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
-BIN      = Name.exe
+BIN      = Bild.exe
 CXXFLAGS = $(CXXINCS) -m32
 CFLAGS   = $(INCS) -m32
 RM       = rm -f
@@ -25,5 +25,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-main.o: main.c
-	$(CC) -c main.c -o main.o $(CFLAGS)
+bild.o: bild.c
+	$(CC) -c bild.c -o bild.o $(CFLAGS)
